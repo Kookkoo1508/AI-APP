@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* 1) กำหนดฟอนต์และสเกลขนาดดีฟอลต์ทั้งระบบ */
+@theme {
+  /* ฟอนต์ */
+    /* --font-sans: "Noto Sans Thai", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Kanit", ui-sans-serif, system-ui, sans-serif; */
+
+    --font-sans: "Bai Jamjuree", ui-sans-serif, system-ui, sans-serif; /* เนื้อหา */
+    --font-heading: "Prompt", ui-sans-serif, system-ui, sans-serif;   /* หัวข้อ */
+
+  /* น้ำหนัก */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ปรับสเกลตัวอักษร (แก้ได้ตามใจ) */
+  --text-sm:   0.9rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+}
+
+/* 2) ตั้งค่า base ให้ทั้งแอป */
+@layer base {
+  html { @apply font-sans text-base text-gray-900 antialiased; }
+  body { font-weight: var(--font-weight-normal); }
+
+  /* หัวข้อใช้ฟอนต์ heading + สไตล์ดีฟอลต์ */
+  h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+  h1 { @apply text-3xl font-bold leading-tight; }
+  h2 { @apply text-2xl font-semibold leading-tight; }
+  h3 { @apply text-xl  font-semibold leading-snug; }
+  h4 { @apply text-lg  font-medium   leading-snug; }
+  h5 { @apply text-base font-medium  leading-snug; }
+  h6 { @apply text-sm  font-medium  leading-snug; }
+}
+
+/* 3) (ออปชัน) ยูทิลิตี้คลาสสำหรับใส่กับอะไรก็ได้ */
+@utility font-heading { font-family: var(--font-heading); }
