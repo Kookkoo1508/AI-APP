@@ -11,7 +11,6 @@ const Settings     = () => import('@/pages/Settings.vue')
 
 const AIChat       = () => import('@/pages/AIChat.vue')
 const AIKnowledge  = () => import('@/pages/AIKnowledge.vue')
-const AIEmbeddings = () => import('@/pages/AIEmbeddings.vue')
 const InboxTasks   = () => import('@/pages/InboxTasks.vue')
 const InboxArchive = () => import('@/pages/InboxArchive.vue')
 const AIStreamChat = () => import('@/pages/AIStreamChat.vue')
@@ -30,7 +29,6 @@ const routes: RouteRecordRaw[] = [
       // AI group
       { path: 'ai/chat',       name: 'ai-chat',       component: AIChat },
       { path: 'ai/knowledge',  name: 'ai-knowledge',  component: AIKnowledge },
-      { path: 'ai/embeddings', name: 'ai-embeddings', component: AIEmbeddings },
       { path: 'ai/stream',     name: 'ai-stramChat',  component: AIStreamChat },
 
 

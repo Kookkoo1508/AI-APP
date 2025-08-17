@@ -29,7 +29,6 @@ const items = computed<NavItem[]>(() => ([
     children: [
       { name: 'Chat',        to: '/ai/chat',      badge: 'New' },
       { name: 'Knowledge',   to: '/ai/knowledge' },
-      { name: 'Embeddings',  to: '/ai/embeddings' },
        { name: 'Stream Chat',  to: '/ai/stream' },
     ]
   },

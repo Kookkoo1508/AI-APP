@@ -14,10 +14,15 @@ instance/
 *.sqlite3
 backend/.env
 
+# RAG data (vector DB / uploads)
+data/chroma/
+data/upload/
+backend/app/uploads/
+backend/app/data/
+
 # Logs
 *.log
 
 # IDE / Editor
 .vscode/
 .idea/
-
